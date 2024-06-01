@@ -1,15 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
+import Skills from './pages/Skills';
 
 const App = () => {
-  return (
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-        </Switch>
-      </Router>
-  );
+    return (
+        <Router>
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/skills" component={Skills} />
+            </Switch>
+        </Router>
+    );
 };
 
 export default App;
